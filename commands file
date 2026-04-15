@@ -1,0 +1,119 @@
+LINUX COMMANDS :
+
+USED FOR :
+Navigating project directories
+Managing files and folders
+
+pwd
+ls
+cd <directory>
+mkdir smartshop
+touch file.txt
+cp source destination
+mv source destination
+rm -rf <file/dir>
+------
+GIT COMMANDS:
+
+USED FOR:
+Managing source code
+Pushing project to Git repository
+Integrating with Jenkins
+
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin <repo-url>
+git push -u origin main
+git pull
+git status
+git log
+------
+MAVEN COMMANDS:
+  
+USED FOR :
+Building Spring Boot applications
+Generating .jar files for Docker
+
+mvn clean package
+mvn clean install
+mvn -v
+--------
+DOCKER COMMANDS:
+USED FOR:
+Creating Docker images
+Running microservices as containers
+
+docker build -t user-service .
+docker build -t product-service .
+docker build -t order-service .
+
+docker images
+docker ps
+docker ps -a
+
+docker run -d -p 8080:8080 user-service
+docker stop <container-id>
+docker rm <container-id>
+-------
+K8S COMMANDS:
+USED FOR :
+Deploying applications to Kubernetes
+Monitoring pods and services
+Debugging issues
+
+kubectl version
+kubectl get nodes
+
+kubectl create namespace smartshop
+kubectl get ns
+
+kubectl apply -f k8s/
+kubectl get pods -n smartshop
+kubectl get svc -n smartshop
+
+kubectl describe pod <pod-name> -n smartshop
+kubectl logs <pod-name> -n smartshop
+--------
+K8S ACCESS FIX :
+USED FOR:
+Enabling Kubernetes deployment from Jenkins
+
+docker exec -it jenkins bash
+
+# install kubectl
+curl -LO https://dl.k8s.io/release/stable/bin/linux/amd64/kubectl
+chmod +x kubectl
+mv kubectl /usr/local/bin/
+-------
+NETWORING/ DEBUGGING COMMANDS:
+
+USED FOR :
+Checking port conflicts
+
+netstat -tulpn | grep 8080
+curl http://localhost:8080
+-------
+K8S DEPLOYMENT FIX COMMAND:
+
+USED FOR :
+Fixing OpenAPI validation issues in CI/CD
+
+kubectl apply -f k8s/ --validate=false
+---------
+PROJECT EXECTUTION FLOW COMMANDS:
+
+# Build project
+mvn clean package
+
+# Build Docker images
+docker build -t user-service ./user-service
+
+# Deploy to Kubernetes
+kubectl create namespace smartshop
+kubectl apply -f k8s/
+
+# Verify
+kubectl get pods -n smartshop
+  
