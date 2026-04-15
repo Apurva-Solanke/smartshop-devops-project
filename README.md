@@ -1,6 +1,7 @@
 Architecture
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0ae8472b-bd91-495c-a038-ef9d1c4c954b" />🛒 SmartShop – Cloud-Native E-Commerce Platform
+<img width="828" height="555" alt="image" src="https://github.com/user-attachments/assets/c8d8f21d-928a-4535-b165-99ab25c93afd" />
+
 
 🚀 Production-Style Microservices | ⚙️ DevOps Pipeline | ☸️ Kubernetes Deployment
 ---
