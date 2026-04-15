@@ -97,7 +97,15 @@ smartshop/
 * Kubernetes deployments
 * Docker lifecycle management
 * Microservices architecture
-* Cloud-native application design
 ---
+Challenges Faced -
+Fixed Java version mismatch in Maven 
+Solved Docker image issues 
+Configured Jenkins with Docker socket 
+Installed kubectl in Jenkins container 
+Fixed Kubernetes API/OpenAPI validation errors
+
+---
+
 👨‍💻 Author
 Apurva Solanke
