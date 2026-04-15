@@ -76,6 +76,25 @@ kubectl get svc -n smartshop
 kubectl describe pod <pod-name> -n smartshop
 kubectl logs <pod-name> -n smartshop
 --------
+PIPELINE CONFIGURATION (USING JENKINS UI):
+
+Steps:
+Created New Item → Pipeline Job
+Connected Git repository:
+Repository URL: http://git-server:3000/max/smartshop.git
+Selected Pipeline Script from SCM
+Defined pipeline using Jenkinsfile
+
+The pipeline automates:
+Git → Jenkins → Maven Build → Docker Build → Kubernetes Deploy
+
+Pipeline Stages:
+
+Checkout → Pull code from Git
+Build → Compile using Maven
+Docker Build → Create images for services
+Deploy → Deploy to Kubernetes cluster
+--------
 K8S ACCESS FIX :
 USED FOR:
 Enabling Kubernetes deployment from Jenkins
