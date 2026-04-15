@@ -1,3 +1,5 @@
+Architecture
+
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0ae8472b-bd91-495c-a038-ef9d1c4c954b" />🛒 SmartShop – Cloud-Native E-Commerce Platform
 
 🚀 Production-Style Microservices | ⚙️ DevOps Pipeline | ☸️ Kubernetes Deployment
@@ -46,6 +48,7 @@ GitHub → Jenkins → Maven Build → Docker Build → Kubernetes Deploy
 ---
 
  Live Execution Proof
+ 
 🐳 Docker Images
 ---
 ☸️ Kubernetes Pods
